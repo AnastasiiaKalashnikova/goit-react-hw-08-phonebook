@@ -1,11 +1,8 @@
-import { AddForm } from 'components/AddForm/AddForm';
-import { ContactList } from 'components/ContactList/ContactList';
-import { Filter } from 'components/Filter/Filter';
-import { Wrapper } from './App.styled';
-import { useDispatch, useSelector } from 'react-redux';
+//import { Wrapper } from './App.styled';
+import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchContacts } from '../../redux/contacts/operations';
-import { selectError, selectIsLoading } from '../../redux/contacts/selector';
+//import { fetchContacts } from '../../redux/contacts/operations';
+//import { selectError, selectIsLoading } from '../../redux/contacts/selector';
 //import { Loader } from 'components/Loader';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from 'components/Layout/Layout';
