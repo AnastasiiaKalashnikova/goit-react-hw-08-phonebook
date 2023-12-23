@@ -2,8 +2,8 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import { AddBtn, StyledForm } from './AddForm.styled';
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../redux/operations';
-import { selectContacts } from '../../redux/selector';
+import { addContact } from '../../redux/contacts/operations';
+import { selectContacts } from '../../redux/contacts/selector';
 
 const Schema = Yup.object().shape({
   name: Yup.string().min(2).required('must be filled'),
