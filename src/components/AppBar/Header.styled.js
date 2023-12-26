@@ -6,7 +6,7 @@ export const Header = styled.header`
   margin-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 32px;
+  font-size: 28px;
   padding-bottom: 16px;
   border-bottom: 2px solid cadetblue;
 `;
