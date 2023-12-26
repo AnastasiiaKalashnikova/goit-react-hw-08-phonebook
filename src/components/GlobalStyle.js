@@ -34,4 +34,7 @@ a {
 a.active{
   color: cadetblue;
 }
+p {
+    margin: 0;
+}
 `;
