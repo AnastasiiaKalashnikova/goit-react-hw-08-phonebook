@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { logIn, logOut, refreshUser, register } from './operations';
+import toast from 'react-hot-toast';
 
 const initialState = {
   user: { name: null, email: null },
@@ -14,16 +15,17 @@ const authSlice = createSlice({
   extraReducers: builder => {
     builder
       .addCase(register.fulfilled, (state, action) => {
-        console.log(action);
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
+      })
+      .addCase(register.rejected, () => {
+        toast.error('User with the same data already exists!');
       })
       .addCase(logIn.fulfilled, (state, action) => {
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
-        console.log('reduser');
       })
       .addCase(logOut.fulfilled, state => {
         state.user = { name: null, email: null };
@@ -40,6 +42,7 @@ const authSlice = createSlice({
       })
       .addCase(refreshUser.rejected, state => {
         state.isRefreshing = false;
+        toast.error("This didn't work.");
       });
   },
 });

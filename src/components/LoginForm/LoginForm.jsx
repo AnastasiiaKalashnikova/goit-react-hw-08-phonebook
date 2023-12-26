@@ -4,14 +4,14 @@ import { logIn } from '../../redux/auth/operations';
 import { FormBtn } from 'components/AddForm/AddForm.styled';
 import {
   StyledRegisterLogForm,
-  StyledRegistretionLogTitle,
+  PageTitle,
 } from 'components/RegisterForm/RegisterForm.styled';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <StyledRegistretionLogTitle>Log in</StyledRegistretionLogTitle>
+      <PageTitle>Log in</PageTitle>
       <Formik
         initialValues={{
           email: '',

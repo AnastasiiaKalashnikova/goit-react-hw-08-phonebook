@@ -1,7 +1,9 @@
+import { PageTitle } from 'components/RegisterForm/RegisterForm.styled';
+
 export default function HomePage() {
   return (
     <div>
-      <p>home</p>
+      <PageTitle>Who will we call today?</PageTitle>
     </div>
   );
 }

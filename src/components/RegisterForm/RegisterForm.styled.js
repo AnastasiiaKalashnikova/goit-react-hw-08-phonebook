@@ -11,7 +11,7 @@ export const StyledRegisterLogForm = styled(Form)`
   margin-left: auto;
 `;
 
-export const StyledRegistretionLogTitle = styled.h1`
+export const PageTitle = styled.h1`
   text-align: center;
   font-size: 32px;
 `;

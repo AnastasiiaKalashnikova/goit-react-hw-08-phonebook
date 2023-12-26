@@ -3,16 +3,13 @@ import { Formik, Field } from 'formik';
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/operations';
 import { FormBtn } from 'components/AddForm/AddForm.styled';
-import {
-  StyledRegisterLogForm,
-  StyledRegistretionLogTitle,
-} from './RegisterForm.styled';
+import { StyledRegisterLogForm, PageTitle } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <StyledRegistretionLogTitle>Registration</StyledRegistretionLogTitle>
+      <PageTitle>Registration</PageTitle>
       <Formik
         initialValues={{
           name: '',
