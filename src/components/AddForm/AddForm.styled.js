@@ -11,7 +11,7 @@ export const StyledForm = styled(Form)`
   margin-bottom: 40px;
 `;
 
-export const AddBtn = styled.button`
+export const FormBtn = styled.button`
   background-color: azure;
   border-radius: 8px;
   width: 160px;

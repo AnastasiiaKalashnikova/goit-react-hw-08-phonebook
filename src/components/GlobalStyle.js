@@ -23,4 +23,15 @@ h1, h2, h3 {
 button {
     cursor: pointer;
 }
+a {
+    text-decoration: none;
+      color: black;
+&:hover,
+  &:focus {
+    text-shadow: rgba(95, 158, 160, 0.53) 4px 4px;
+  }
+}
+a.active{
+  color: cadetblue;
+}
 `;

@@ -1,5 +1,5 @@
 import { Formik, Field, ErrorMessage } from 'formik';
-import { AddBtn, StyledForm } from './AddForm.styled';
+import { FormBtn, StyledForm } from './AddForm.styled';
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations';
@@ -39,7 +39,7 @@ export const AddForm = () => {
         <Field type="tel" name="number" />
         <ErrorMessage name="number" />
 
-        <AddBtn type="submit">Add Contact</AddBtn>
+        <FormBtn type="submit">Add Contact</FormBtn>
       </StyledForm>
     </Formik>
   );
