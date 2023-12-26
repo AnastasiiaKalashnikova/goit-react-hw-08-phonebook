@@ -20,7 +20,7 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
       })
       .addCase(register.rejected, () => {
-        toast.error('User with the same data already exists!');
+        toast.error('Check your data and try again!');
       })
       .addCase(logIn.fulfilled, (state, action) => {
         state.user = action.payload.user;
